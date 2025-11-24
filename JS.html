@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS ejercicios</title>
+  <link rel="stylesheet" href="style.css"></link>
+  <link rel="stylesheet" href="reset.css"></link>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link href="img/icoBill.ico" rel="icon"></link>
+</head>
+<body>
+    <div class="menuInicial">
+
+        <div class="IconoPrinc">
+            <div class="c">
+            <a href=""><img width="auto" height="55" src="img/icoBILLPror.png"> </img></a>
+            </div>
+        </div>
+
+        <div class="selecc"> <!-- aca van las cosas de opciones de menu-->
+            <h2 style="color: rgb(27, 27, 27);">
+                <br><br>
+                <a href="pagPrin.html" class="texesp tipografia">Bitacora</a>
+                <a href="present.html" class="texesp tipografia">Presentacion</a>
+                <a href="pueba.html" class="texesp tipografia">Ilustracion</a>
+
+            </h2>
+        </div> 
+
+     </div>
+     <br><br>
+     <br><br>
+
+</body>
+<script>
+    //este es un comentario lol
+    console.log("el script se esta ejecutando esta cosa es como una bandea de que si se esta ejecutando yea");
+    document.write("<h2>contenido adregado al JS :0 </h2>") //poner elemento
+    // una variable es un espacio en memori al que s le puede asignar algo
+ 
+    let nombre= "Juan Jose David"
+ 
+    var edad = 32; //estas var pueden cambiar
+ 
+    const CURP = "Ejemplo CURP" //estas no cambian son constantes
+   
+    var suma = 10+5
+ 
+    //esstructuras de control
+ 
+    var calificacionDamaris = 10;
+    if (calificacionDamaris >=10 ){
+        console.log("aprovo la materia");//print lit
+    }
+    else{
+        console.log("Reprobada");
+    }
+ 
+    var flechasminecraft = 15;
+    var opcionSeleccionada = "Jugar"
+    switch (opcionSeleccionada){
+ 
+        case "Jugar":
+        if (flechasminecraft >= 15){
+            console.log("almacen de flechas lleno");
+        }
+        else {
+            console.log("ya no tienes flechas papu :C");
+        }
+        break;
+ 
+        case "hacha": {
+            console.log ("usando hacha");
+        }
+        break;
+    }
+ 
+    var i = 0;
+    for (i in 5){
+         document.write("hola :D");
+        var i=i+i;
+    }
+ 
+    let contador = 0;
+
+    while (contador < 5) {
+     console.log("El contador vale: " + contador);
+    contador++;
+    }
+       
+    let numero = 0;
+
+    do {
+    console.log("El número es: " + numero);
+    numero++;
+    } while (numero < 5);
+
+ 
+ 
+</script>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ilustracion</title>
+  <link rel="stylesheet" href="style.css"></link>
+  <link rel="stylesheet" href="reset.css"></link>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link href="img/icoBill.ico" rel="icon"></link>
+
+</head>
+<body>
+ <div class="menuInicial">
+
+        <div class="IconoPrinc">
+          <div class="c">
+            <a href="pagPrin.html"><img width="auto" height="55" src="img/icoBILLPror.png"> </img></a>
+          </div>
+        </div>
+
+        <div class="selecc"> <!-- aca van las cosas de opciones de menu-->
+            <h2 style="color: rgb(27, 27, 27);">
+                <br><br>
+                <div class="m">
+                <a href="pagPrin.html" class="texesp tipografia">Bitacora</a>
+                <a href="present.html" class="texesp tipografia">Presentacion</a>
+                <a href="JS.html" class="texesp tipografia">JavaScript</a>
+
+                </div>
+            </h2>
+        </div> 
+
+     </div>
+
+  <div class="bodyt">
+  <div class="parallax-container">
+    <div class="layer" data-speed="0.2">
+      <img src="img/fondo.jpg" alt="Capa fondo">
+    </div>
+    <div class="layer" data-speed="0.5">
+      <img src="img/familia.png" alt="Capa medio">
+    </div>
+    <div class="layer" data-speed="0.8">
+      <img src="img/sol.png" alt="Capa frente">
+    </div>
+  </div>
+<script>
+  const layers = document.querySelectorAll(".layer");
+
+  window.addEventListener("scroll", () => {
+    let scrollY = window.scrollY;
+    layers.forEach(layer => {
+      const speed = layer.getAttribute("data-speed");
+      layer.style.transform = `translateY(${scrollY * speed}px)`;
+    });
+  });
+</script>
+</div>
+
+
+
+</body>
+</html>
